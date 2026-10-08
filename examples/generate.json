@@ -1,0 +1,8 @@
+{
+  "prompt": "A teal cube slowly rotates on a cream tabletop, studio lighting, no text.",
+  "model": "wan3.0-video",
+  "duration": 5,
+  "resolution": "720P",
+  "ratio": "16:9",
+  "audio": false
+}
