@@ -1,0 +1,28 @@
+{
+  "source": {
+    "apiId": "6a4ecdbf-b219-4505-8277-5ec4b1ac14f8",
+    "path": "/wan/videos"
+  },
+  "catalog": {
+    "models": [
+      "wan2.6-i2v",
+      "wan2.6-r2v",
+      "wan2.6-i2v-flash",
+      "wan2.6-t2v",
+      "wan3.0-video"
+    ],
+    "actions": [
+      "text2video",
+      "image2video"
+    ],
+    "mediaTypes": [
+      "first_frame",
+      "last_frame",
+      "reference_image",
+      "reference_video",
+      "reference_audio",
+      "file",
+      "link"
+    ]
+  }
+}

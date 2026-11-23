@@ -4,6 +4,13 @@
 
 Generate video and retrieve the result in a FastGPT workflow. [简体中文](README_zh_CN.md) · [Current pricing](https://platform.acedata.cloud/models?utm_source=github&utm_medium=referral&utm_campaign=evergreen&utm_content=wanfastgpt_readme_pricing)
 
+## Model and reference inputs
+
+Wan 2.6 i2v/i2v-flash use image2video mode and a first-frame image; r2v uses image2video mode with reference video URLs. Wan 3 can receive the documented typed reference media list. The model field remains free text; choose the documented mode, resolution, duration and references for the selected model.
+
+The Model field lists the current published models in its help text and still accepts exact model IDs as free text. Its catalog is generated from the public API contract. A daily workflow proposes a draft source update; it never publishes a package or runs generation. Review and release are separate. Existing tool IDs, text-generation defaults and task lookup behavior are preserved. No paid model execution was performed for this update.
+
+
 ## Quick start
 
 ### 1. Install
