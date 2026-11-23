@@ -1,3 +1,5 @@
+import { referencePayload, type ReferenceInput } from './references.ts';
+
 export type TaskResult = {
   taskId: string;
   traceId: string;
@@ -14,7 +16,7 @@ export type GenerateInput = {
   resolution: string;
   ratio: string;
   audio: boolean;
-};
+} & ReferenceInput;
 
 const GENERATE_PATH = '/wan/videos';
 const TASK_PATH = '/wan/tasks';
@@ -111,7 +113,7 @@ export async function submitGeneration(input: GenerateInput, apiKey: string): Pr
     resolution: input.resolution,
     ratio: input.ratio,
     audio: input.audio,
-    action: 'text2video',
+    ...referencePayload(input),
     async: true,
   };
   const body = await post(GENERATE_PATH, apiKey, payload);
